@@ -1,0 +1,44 @@
+
+.my-header-container{
+
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+
+.logo-container{
+    width: 100%;
+    height: 100px;
+}
+.my-container{
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: aqua;
+}
+
+.my-aside{
+
+    width: 150px;
+    height: calc(100vh - 100px);
+    background-color: blue;
+}
+
+.content-container{
+
+    width: calc(100% - 150px);
+}
+.top-content{
+
+    width:100%;
+    height: 100px;
+    background-color: red;
+
+}
+
+.bottom-content{
+    width: 100%;
+    min-height: 100px;
+    background-color: green;
+    overflow: hidden;
+}

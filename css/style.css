@@ -35,6 +35,7 @@ header{
     position: fixed;
     bottom: 0;
     left: 0;
+    padding-top: 70px;
     
 }
 
@@ -51,8 +52,15 @@ header{
 
 .my-cell{
 
-    width: 50%;
+    width: 40%;
     
+}
+
+/*Hover*/
+
+.aside-top a:hover{
+
+    background-color: lightgray;
 }
 
 /*Responsive*/
@@ -69,10 +77,6 @@ header{
         margin-left: 150px;
     }
 
-    .my-cell{
-
-        width: 40%;
-        
-    }
+    
     
 }

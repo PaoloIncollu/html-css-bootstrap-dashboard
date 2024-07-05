@@ -107,9 +107,49 @@
 
         <main class="container-fluid my-container position-relative  d-flex ">
 
-            <aside class="my-aside h-100 d-flex flex-column">
+            <aside class="my-aside h-100 d-flex flex-column align-items-center">
                 
+              <div class="aside-top pt-4 text-white flex-grow-1">
 
+                <ul class = "list-unstyled">
+                  <li class="p-1">
+                    <a class="text-white text-decoration-none p-1" href="#">
+                      <i class="bi bi-house-door-fill icon-lg"></i>
+                      <span class="d-none d-lg-inline-block">Home</span>
+                    </a>
+                  </li>
+
+                  <li class="p-1">
+
+                    <a  class="text-white text-decoration-none p-1" href="#">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      <span class="d-none d-lg-inline-block">Stats</span>
+                    </a>
+                  </li>
+
+                  <li class="p-1">
+                    <a  class="text-white text-decoration-none p-1" href="#">
+                      <i class="bi bi-reception-4"></i>
+                      <span class="d-none d-lg-inline-block">Signals</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="aside-bottom">
+
+                <ul class = "list-unstyled">
+                  <li class="">
+                    <a class="text-white text-decoration-none" href="#">
+                      <i class="bi bi-gear-fill"></i>
+                      <span class="d-none d-lg-inline-block ps-2">Admin</span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
             </aside>
 
             
@@ -130,11 +170,11 @@
 
                             <a class="dropdown text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                                <i class="text-white border py-1 px-2">+</i>
+                              <i class="text-white border py-1 px-2">+</i>
     
                             </a>
 
-                            <form class="dropdown-menu vw-50 hw-100 g-3">
+                            <form class="dropdown-menu hw-100 g-3">
                                 <div class="col-md-6">
                                   <label for="inputEmail4" class="form-label">Email</label>
                                   <input type="email" class="form-control" id="inputEmail4">
@@ -238,8 +278,8 @@
                                         <th scope="col" class="my-cell">Nome</th>
                                         <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
                                         <th scope="col" class="d-none d-md-table-cell">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
+                                        <th scope="col" class="text-center">Stato</th>
+                                        <th scope="col" class="text-center">Azioni</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -254,12 +294,24 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
 
                                             <span class="badge rounded-pill text-bg-success">Done</span>
 
                                         </td>
-                                        <td></td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
+
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
@@ -272,12 +324,24 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             
                                             <span class="badge rounded-pill text-bg-success">Done</span>
 
                                         </td>
-                                        <td>@mdo</td>
+                                        <td class="text-center">
+
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
@@ -288,12 +352,24 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
 
                                             <span class="badge rounded-pill text-bg-warning">process</span>
 
                                         </td>
-                                        <td>@mdo</td>
+                                        <td class="text-center">
+
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
@@ -306,13 +382,22 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             
                                             <span class="badge rounded-pill text-bg-success">Done</span>
 
                                         </td>
-                                        <td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
                                             
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
@@ -326,12 +411,21 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             
                                             <span class="badge rounded-pill text-bg-danger">failed</span>
                                         </td>
-                                        <td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
                                             
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
@@ -345,13 +439,22 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
 
                                             <span class="badge rounded-pill text-bg-success">Done</span>
 
                                         </td>
-                                        <td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
                                             
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
@@ -365,13 +468,22 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
 
                                             <span class="badge rounded-pill text-bg-danger">failed</span>
 
                                         </td>
-                                        <td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
                                             
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
+
+                                          </button>
                                         </td>
                                       </tr>
                                       <tr>
@@ -385,11 +497,20 @@
                                         <td class="d-none d-md-table-cell">
                                             20%
                                         </td>
-                                        <td>
+                                        <td class="text-center">
                                             <span class="badge rounded-pill text-bg-success">Done</span>
                                         </td>
-                                        <td>
+                                        <td class="text-center">
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-pencil-fill"></i>
+                                            
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary">
+                                            
+                                            <i class="bi bi-trash-fill"></i>
 
+                                          </button>
                                         </td>
                                       </tr>
                                       
@@ -454,7 +575,9 @@
 
                                 <div class="card-header">
 
-                                  Featured
+                                  <h4 class="fw-bold">
+                                    TODO
+                                  </h4> 
 
                                 </div>
 

@@ -19,52 +19,195 @@
     
     </head>
 
-    <header class="d-fixed mt-0 ms-0 height">
+    <header class="position-fixed container-fluid top-0 start-0 bg-white z-1  ps-0 ps-lg-2">
 
-        <nav class="row align-items-center justify-content-around">
+        <nav class="row align-items-center">
 
-            <div class="col">
+            <div class="col-auto d-lg-none ms-0">
+    
+                <img class="img-fluid logo-small" src="img/mobile-logo.png" alt="boolean">
 
-                <div class="logo-container d-flex">
-                    <img class="img-fluid" src="img/mobile-logo.png" alt="boolean">
-                    <img class="img-fluid" src="img/logo.svg" alt="boolean">
-                </div>
             </div>
 
-            <div class="col flex-grow-1">
-                <form class="d-flex" role="search">
+            <div class="col-auto d-none d-lg-block py-2">
+                <img class="img-fluid" src="img/logo.svg" alt="boolean">
+            </div>
+            <div class="col">
+                <form role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     
                   </form>
             </div>
 
-            <div class="col">
-                <i class="bi bi-list"></i>
-                <i class="bi bi-question-circle-fill"></i>
-                <i class="bi bi-three-dots-vertical"></i>
-                <i class="bi bi-bell-fill"></i>
+            <div class="col-auto d-flex">
+
+                <a href="#" class="d-none d-lg-block text-decoration-none text-secondary pe-2">
+
+                    <i class="bi bi-list "></i>
+
+                </a>
+                
+                <a href="#" class="d-none d-lg-block text-decoration-none text-secondary pe-2">
+
+                    <i class="bi bi-question-circle-fill "></i>
+
+                </a>
+                
+                <a href="#" class="d-none d-lg-block text-decoration-none text-secondary pe-2">
+
+                    <i class="bi bi-three-dots-vertical "></i>
+
+                </a>
+    
+                <div class="dropdown ">
+
+                    <a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <i class="bi bi-bell-fill text-warning"></i>
+
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+
+                        <li>
+
+                            <a class="dropdown-item" href="#">Profilo</a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item" href="#">Fatturazione</a>
+
+                        </li>
+
+                        <li>
+                            
+                            <a class="dropdown-item" href="#">Logout</a>
+                        
+                        </li>
+
+                    </ul>
+
+                </div>
+                
             </div>
         </nav>
         
     </header>
     <body>
 
-        <main class="my-container d-flex">
+        <main class="container-fluid my-container position-relative  d-flex ">
 
-            <aside class="my-aside d-fixed ms-0 mb-0">
+            <aside class="my-aside h-100 d-flex flex-column">
                 
 
             </aside>
 
             
-            <div class="content-container">
+            <div class="container-content text-white">
 
-                <div class="top-content">
+                <div class="top-content row my-bg-light-blu py-4">
 
+                    <div class="col-12 col-md-4 col-lg-2 order-md-1 d-flex align-content-baseline">
+                        
+                        <p>
+
+                          Nuovo Studente 
+
+                        </p>
+                        
+
+                        <div class="dropdown ps-2">
+
+                            <a class="dropdown text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class="text-white border py-1 px-2">+</i>
+    
+                            </a>
+
+                            <form class="dropdown-menu vw-50 hw-100 g-3">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-6 pt-2 pt-md-0">
+
+                        <h4 class="d-inline">
+                            Boolean
+                        </h4>
+
+                        <span class="badge rounded-pill my-bg-blu">Piano blaze</span>
+
+                        <br>
+
+                        <span class="badge rounded-pill my-bg-blu">3 app</span>
+                        <span>>></span>
+                        <span class="badge rounded-pill my-bg-blu d-lg-none">+</span>
+                        <span class="badge rounded-pill my-bg-blu d-none d-lg-inline-block">Boolean Mobile app</span>
+                        <span class="badge rounded-pill my-bg-blu d-none d-lg-inline-block">Boolean web app</span>
+                        <span class="badge rounded-pill my-bg-blu d-none d-lg-inline-block">Boolean blog app</span>
+                        
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4 pt-2 pt-md-0">
+
+                        <span>
+                            Studenti online negli ultimi 30 minuti
+                        </span>
+
+                        <h4>
+                            125
+                        </h4>
+                    </div>
 
                 </div>
 
-                <div class="bottom-content">
+                <div class="bottom-content row">
 
                 </div>
             </div>

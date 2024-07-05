@@ -44,11 +44,15 @@ header{
     margin-left: 50px;
 }
 
-.bottom-content{
+.img-avatar{
+
+    width: 20px;
+}
+
+.my-cell{
+
+    width: 50%;
     
-    min-height: 100px;
-    background-color: green;
-    overflow: hidden;
 }
 
 /*Responsive*/
@@ -64,4 +68,11 @@ header{
 
         margin-left: 150px;
     }
+
+    .my-cell{
+
+        width: 40%;
+        
+    }
+    
 }

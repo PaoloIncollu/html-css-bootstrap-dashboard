@@ -168,13 +168,16 @@
 
                         <div class="dropdown ps-2">
 
-                            <a class="dropdown text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            
 
-                              <i class="text-white border py-1 px-2">+</i>
-    
-                            </a>
-
-                            <form class="dropdown-menu hw-100 g-3">
+                              
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">+</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class=" hw-100 g-3">
                                 <div class="col-md-6">
                                   <label for="inputEmail4" class="form-label">Email</label>
                                   <input type="email" class="form-control" id="inputEmail4">
@@ -217,7 +220,14 @@
                                 <div class="col-12">
                                   <button type="submit" class="btn btn-primary">Sign in</button>
                                 </div>
-                            </form>
+    </form>
+  </div>
+</div>
+                            </a>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+
+                            
                         </div>
                         
                         
